@@ -35,3 +35,8 @@
 # /source/busPirate.X/busPirate/
 /source/busPirate.X/busPirate/.dep.inc
 /source/busPirate.X/busPirate/.map
+
+/source/busPirate.X/busPirate/build
+/source/busPirate.X/busPirate/dist
+/source/busPirate.X/busPirate/nbproject/Makefile-genesis.properties
+
