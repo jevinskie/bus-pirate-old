@@ -1,0 +1,37 @@
+
+# /bootloader-v4/
+/bootloader-v4/output
+/bootloader-v4/p24FJ64GA002.inc
+
+# /bootloader-v4/firmware-v4.1/src/
+/bootloader-v4/firmware-v4.1/src/output
+
+# /bootloader-v4/firmware-v4.3/
+/bootloader-v4/firmware-v4.3/output
+
+# /bootloader-v4/firmware-v4.3/src/
+/bootloader-v4/firmware-v4.3/src/output
+
+# /bootloader-v4/upgrader-v2tov4/
+/bootloader-v4/upgrader-v2tov4/installer.cof
+/bootloader-v4/upgrader-v2tov4/installer.hex
+/bootloader-v4/upgrader-v2tov4/installer.map
+
+# /bootloader-v4/upgrader-v4tov4/
+/bootloader-v4/upgrader-v4tov4/installer.cof
+/bootloader-v4/upgrader-v4tov4/installer.hex
+/bootloader-v4/upgrader-v4tov4/installer.map
+
+# /source/
+/source/busPirate.mcs
+/source/output
+/source/work
+
+# /source/USBPICPROG/
+/source/USBPICPROG/redefines.h
+/source/USBPICPROG/spi.c
+/source/USBPICPROG/spi.h
+
+# /source/busPirate.X/busPirate/
+/source/busPirate.X/busPirate/.dep.inc
+/source/busPirate.X/busPirate/.map
