@@ -30,7 +30,7 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/43898991/bitbang.o ${OBJECTDIR}/_ext/43898991/UART.o ${OBJECTDIR}/_ext/43898991/main.o ${OBJECTDIR}/_ext/43898991/base.o ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o ${OBJECTDIR}/_ext/43898991/raw3wire.o ${OBJECTDIR}/_ext/43898991/selftest.o ${OBJECTDIR}/_ext/43898991/binwire.o ${OBJECTDIR}/_ext/1993222530/en_US.o ${OBJECTDIR}/_ext/43898991/SUMP.o ${OBJECTDIR}/_ext/43898991/OpenOCD.o ${OBJECTDIR}/_ext/43898991/binIOhelpers.o ${OBJECTDIR}/_ext/43898991/baseIO.o ${OBJECTDIR}/_ext/43898991/dio.o ${OBJECTDIR}/_ext/43898991/AUXpin.o ${OBJECTDIR}/_ext/43898991/raw2wire.o ${OBJECTDIR}/_ext/43898991/m_1wire_213.o ${OBJECTDIR}/_ext/43898991/I2C.o ${OBJECTDIR}/_ext/43898991/1wire.o ${OBJECTDIR}/_ext/43898991/binIO.o ${OBJECTDIR}/_ext/43898991/HD44780.o ${OBJECTDIR}/_ext/43898991/busPirateCore.o ${OBJECTDIR}/_ext/43898991/baseUI.o ${OBJECTDIR}/_ext/43898991/basic.o ${OBJECTDIR}/_ext/43898991/SPI.o ${OBJECTDIR}/_ext/43898991/uart2io.o ${OBJECTDIR}/_ext/43898991/procMenu.o ${OBJECTDIR}/_ext/43898991/pic.o ${OBJECTDIR}/_ext/43898991/pc_at_keyboard.o
+OBJECTFILES=${OBJECTDIR}/_ext/43898991/bitbang.o ${OBJECTDIR}/_ext/43898991/UART.o ${OBJECTDIR}/_ext/43898991/main.o ${OBJECTDIR}/_ext/43898991/base.o ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o ${OBJECTDIR}/_ext/43898991/raw3wire.o ${OBJECTDIR}/_ext/43898991/selftest.o ${OBJECTDIR}/_ext/43898991/binwire.o ${OBJECTDIR}/_ext/1993222530/en_US.o ${OBJECTDIR}/_ext/43898991/SUMP.o ${OBJECTDIR}/_ext/43898991/OpenOCD.o ${OBJECTDIR}/_ext/43898991/binIOhelpers.o ${OBJECTDIR}/_ext/43898991/baseIO.o ${OBJECTDIR}/_ext/43898991/dio.o ${OBJECTDIR}/_ext/43898991/switch_clock.o ${OBJECTDIR}/_ext/43898991/AUXpin.o ${OBJECTDIR}/_ext/43898991/raw2wire.o ${OBJECTDIR}/_ext/43898991/m_1wire_213.o ${OBJECTDIR}/_ext/43898991/I2C.o ${OBJECTDIR}/_ext/43898991/1wire.o ${OBJECTDIR}/_ext/43898991/binIO.o ${OBJECTDIR}/_ext/43898991/HD44780.o ${OBJECTDIR}/_ext/43898991/busPirateCore.o ${OBJECTDIR}/_ext/43898991/baseUI.o ${OBJECTDIR}/_ext/43898991/basic.o ${OBJECTDIR}/_ext/43898991/SPI.o ${OBJECTDIR}/_ext/43898991/uart2io.o ${OBJECTDIR}/_ext/43898991/procMenu.o ${OBJECTDIR}/_ext/43898991/pic.o ${OBJECTDIR}/_ext/43898991/pc_at_keyboard.o
 
 
 CFLAGS=
@@ -78,6 +78,10 @@ ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o: ../../OpenOCD_asm.S  nbproject/Makefil
 ${OBJECTDIR}/_ext/1993222530/en_US.o: ../../translations/en_US.s  nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} ${OBJECTDIR}/_ext/1993222530 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -c -mcpu=$(MP_PROCESSOR_OPTION) -I"../../translations" -o ${OBJECTDIR}/_ext/1993222530/en_US.o ../../translations/en_US.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--defsym=__MPLAB_DEBUG=1,--defsym=__ICD2RAM=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,-g
+.PHONY: ${OBJECTDIR}/_ext/43898991/switch_clock.o
+${OBJECTDIR}/_ext/43898991/switch_clock.o: ../../switch_clock.s  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR}/_ext/43898991 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -c -mcpu=$(MP_PROCESSOR_OPTION) -I"../../translations" -o ${OBJECTDIR}/_ext/43898991/switch_clock.o ../../switch_clock.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--defsym=__MPLAB_DEBUG=1,--defsym=__ICD2RAM=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_PK3=1,-g
 else
 .PHONY: ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o
 ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o: ../../OpenOCD_asm.S  nbproject/Makefile-${CND_CONF}.mk
@@ -87,6 +91,10 @@ ${OBJECTDIR}/_ext/43898991/OpenOCD_asm.o: ../../OpenOCD_asm.S  nbproject/Makefil
 ${OBJECTDIR}/_ext/1993222530/en_US.o: ../../translations/en_US.s  nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} ${OBJECTDIR}/_ext/1993222530 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  -omf=elf -c -mcpu=$(MP_PROCESSOR_OPTION) -I"../../translations" -o ${OBJECTDIR}/_ext/1993222530/en_US.o ../../translations/en_US.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST)
+.PHONY: ${OBJECTDIR}/_ext/43898991/switch_clock.o
+${OBJECTDIR}/_ext/43898991/switch_clock.o: ../../switch_clock.s  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} ${OBJECTDIR}/_ext/43898991 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  -omf=elf -c -mcpu=$(MP_PROCESSOR_OPTION) -I"../../translations" -o ${OBJECTDIR}/_ext/43898991/switch_clock.o ../../switch_clock.s  -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST)
 endif
 
 # ------------------------------------------------------------------------------------

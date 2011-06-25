@@ -95,6 +95,7 @@
       <itemPath>../../raw2wire.c</itemPath>
       <itemPath>../../raw3wire.c</itemPath>
       <itemPath>../../selftest.c</itemPath>
+      <itemPath>../../switch_clock.s</itemPath>
       <itemPath>../../uart2io.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
