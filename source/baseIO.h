@@ -123,3 +123,5 @@ void bpWhexBuf(unsigned int c); //write a hex value to ring buffer
 //
 // Read the lower 16 bits from programming flash memory
 unsigned int bpReadFlash(unsigned int page, unsigned int addr);
+unsigned long int bpReadFlashFull(unsigned int page, unsigned int addr);
+
