@@ -16,14 +16,15 @@
 #ifndef BASE 
 #define BASE
 #include <p24Fxxxx.h>
+
+#define FCY 12000000
+
 #include <libpic30.h>
 
 //this sets the hardware version
 //#define BUSPIRATEV1A //http://hackaday.com/2009/01/22/how-to-bus-pirate-v1-improved-universal-serial-interface/
 #define BUSPIRATEV3 //also v2go
 //#define BUSPIRATEV4 
-
-#define FCY 12000000
 
 #define BP_FIRMWARE_STRING "Firmware v6.0RC (r572) "
 

@@ -23,6 +23,7 @@
 #include "binIO.h"
 #include "SUMP.h"
 #include "basic.h"
+#include "bauds.h"
 
 extern struct _bpConfig bpConfig;
 extern struct _modeConfig modeConfig;
@@ -1666,18 +1667,18 @@ void setBaudRate(void)
 	consumewhitechars();
 	speed=getint();
 
-	if((speed>0)&&(speed<=10))
+	if((speed>0)&&(speed<=NUM_BAUDS))
 	{	bpConfig.termSpeed=speed-1;
 	}
 	else
 	{	cmderror=0;
 		//bpWmessage(MSG_OPT_UART_BAUD); //show stored dialog
-		BPMSG1133;
+		print_bauds();
 	//	bpConfig.termSpeed=(bpUserNumberPrompt(1, 9, 9)-1);
 		bpConfig.termSpeed=getnumber(9,1,10,0)-1;
 	}
 
-	if(bpConfig.termSpeed==9)
+	if(bpConfig.termSpeed==(NUM_BAUDS - 1))
 	{	consumewhitechars();
 		brg=getint();
 
