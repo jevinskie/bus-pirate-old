@@ -16,11 +16,14 @@
 #ifndef BASE 
 #define BASE
 #include <p24Fxxxx.h>
+#include <libpic30.h>
 
 //this sets the hardware version
 //#define BUSPIRATEV1A //http://hackaday.com/2009/01/22/how-to-bus-pirate-v1-improved-universal-serial-interface/
 #define BUSPIRATEV3 //also v2go
 //#define BUSPIRATEV4 
+
+#define FCY 12000000
 
 #define BP_FIRMWARE_STRING "Firmware v6.0RC (r572) "
 
@@ -169,6 +172,7 @@ void bpWbyte(unsigned int c);
 //delays used by many libraries
 //void bpDelayMS(const unsigned char delay);
 //void bpDelayUS(const unsigned char delay);
-void bpDelayMS(int delay);
-void bpDelayUS(int delay);
+#define bpDelayMS __delay_ms
+#define bpDelayUS __delay_us
+
 #endif
