@@ -1675,10 +1675,10 @@ void setBaudRate(void)
 		//bpWmessage(MSG_OPT_UART_BAUD); //show stored dialog
 		print_bauds();
 	//	bpConfig.termSpeed=(bpUserNumberPrompt(1, 9, 9)-1);
-		bpConfig.termSpeed=getnumber(9,1,10,0)-1;
+		bpConfig.termSpeed=getnumber(DEFAULT_BAUD_INDEX+1,1,NUM_BAUDS+1,0)-1;
 	}
 
-	if(bpConfig.termSpeed==(NUM_BAUDS - 1))
+	if(bpConfig.termSpeed==(NUM_BAUDS))
 	{	consumewhitechars();
 		brg=getint();
 

@@ -49,6 +49,7 @@ unsigned char binmodecnt=0;//, terminalInput[TERMINAL_BUFFER];
 
 int main(void){
 
+        switch_clocks();
 	Initialize();//setup bus pirate
 
 //wait for the USB connection to enumerate
